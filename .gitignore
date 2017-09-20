@@ -1,32 +1,14 @@
-# Prerequisites
-*.d
+HW/Datasheets/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+HW/kicad*
 
-# Precompiled Headers
-*.gch
-*.pch
+HW/_autosave*
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+HW/*.bak
 
-# Fortran module files
-*.mod
-*.smod
+HW/*-bak
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+HW/*.bck
+HW/*.swp
+HW/*.xml
+HW/gerbers/

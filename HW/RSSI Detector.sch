@@ -1,0 +1,307 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:vna
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Microwavino RSSI Detectors"
+Date ""
+Rev "1.0"
+Comp "Helentronica"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R?
+U 1 1 59C23EFC
+P 4300 4700
+F 0 "R?" V 4380 4700 50  0000 C CNN
+F 1 "49.9" V 4300 4700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4230 4700 30  0001 C CNN
+F 3 "" H 4300 4700 30  0000 C CNN
+	1    4300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59C23F09
+P 5500 3450
+F 0 "#PWR?" H 5500 3200 50  0001 C CNN
+F 1 "GND" H 5500 3300 50  0000 C CNN
+F 2 "" H 5500 3450 60  0000 C CNN
+F 3 "" H 5500 3450 60  0000 C CNN
+	1    5500 3450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3350 5600 3350
+Wire Wire Line
+	5500 3350 5500 3450
+Wire Wire Line
+	4800 3100 5600 3100
+Wire Wire Line
+	6650 3100 7450 3100
+Wire Wire Line
+	6400 3600 6400 3700
+Text Label 7650 3700 2    60   ~ 0
+A
+$Comp
+L C C?
+U 1 1 59C23F21
+P 7650 4150
+F 0 "C?" H 7675 4250 50  0000 L CNN
+F 1 "1n" H 7675 4050 50  0000 L CNN
+F 2 "VNA:C_0402b" H 7688 4000 30  0001 C CNN
+F 3 "" H 7650 4150 60  0000 C CNN
+	1    7650 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4300 7650 4550
+Wire Wire Line
+	7650 4550 7700 4550
+Wire Wire Line
+	6400 3700 7650 3700
+Wire Wire Line
+	7650 3700 7650 4000
+$Comp
+L C C?
+U 1 1 59C23F6A
+P 4600 4150
+F 0 "C?" H 4625 4250 50  0000 L CNN
+F 1 "1n" H 4625 4050 50  0000 L CNN
+F 2 "VNA:C_0402b" H 4638 4000 30  0001 C CNN
+F 3 "" H 4600 4150 60  0000 C CNN
+	1    4600 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4300 4600 4550
+Wire Wire Line
+	4600 4550 4550 4550
+Wire Wire Line
+	2850 4650 2800 4650
+$Comp
+L R R?
+U 1 1 59C23F92
+P 2650 4650
+F 0 "R?" V 2730 4650 50  0000 C CNN
+F 1 "100" V 2650 4650 50  0000 C CNN
+F 2 "VNA:R_0402b" V 2580 4650 30  0001 C CNN
+F 3 "" H 2650 4650 30  0000 C CNN
+	1    2650 4650
+	0    -1   1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 59C23F99
+P 2350 4900
+F 0 "C?" H 2375 5000 50  0000 L CNN
+F 1 "100n" H 2375 4800 50  0000 L CNN
+F 2 "VNA:C_0402b" H 2388 4750 30  0001 C CNN
+F 3 "" H 2350 4900 60  0000 C CNN
+	1    2350 4900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4650 2500 4650
+Wire Wire Line
+	5850 3700 4600 3700
+Wire Wire Line
+	4600 3700 4600 4000
+Wire Wire Line
+	2350 4650 2350 4750
+$Comp
+L GND #PWR?
+U 1 1 59C23FA4
+P 2350 5050
+F 0 "#PWR?" H 2350 4800 50  0001 C CNN
+F 1 "GND" H 2350 4900 50  0000 C CNN
+F 2 "" H 2350 5050 60  0000 C CNN
+F 3 "" H 2350 5050 60  0000 C CNN
+	1    2350 5050
+	-1   0    0    -1  
+$EndComp
+Text HLabel 2100 4650 0    60   Output ~ 0
+ADC_B
+Connection ~ 2350 4650
+Wire Wire Line
+	5850 3600 5850 3700
+Text Label 4600 3700 0    60   ~ 0
+B
+$Comp
+L AD8319 U?
+U 1 1 59C249DD
+P 3550 4850
+F 0 "U?" H 3300 5300 60  0000 C CNN
+F 1 "AD8319" H 3700 4450 60  0000 C CNN
+F 2 "" H 3550 4900 60  0001 C CNN
+F 3 "" H 3550 4900 60  0001 C CNN
+	1    3550 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 59C2507D
+P 7850 4700
+F 0 "R?" V 7930 4700 50  0000 C CNN
+F 1 "49.9" V 7850 4700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7780 4700 30  0001 C CNN
+F 3 "" H 7850 4700 30  0000 C CNN
+	1    7850 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L AD8319 U?
+U 1 1 59C25084
+P 8500 4850
+F 0 "U?" H 8250 5300 60  0000 C CNN
+F 1 "AD8319" H 8650 4450 60  0000 C CNN
+F 2 "" H 8500 4900 60  0001 C CNN
+F 3 "" H 8500 4900 60  0001 C CNN
+	1    8500 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4650 9200 4650
+$Comp
+L R R?
+U 1 1 59C25558
+P 9350 4650
+F 0 "R?" V 9430 4650 50  0000 C CNN
+F 1 "100" V 9350 4650 50  0000 C CNN
+F 2 "VNA:R_0402b" V 9280 4650 30  0001 C CNN
+F 3 "" H 9350 4650 30  0000 C CNN
+	1    9350 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 59C2555F
+P 9650 4900
+F 0 "C?" H 9675 5000 50  0000 L CNN
+F 1 "100n" H 9675 4800 50  0000 L CNN
+F 2 "VNA:C_0402b" H 9688 4750 30  0001 C CNN
+F 3 "" H 9650 4900 60  0000 C CNN
+	1    9650 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4650 9900 4650
+Wire Wire Line
+	9650 4650 9650 4750
+$Comp
+L GND #PWR?
+U 1 1 59C25568
+P 9650 5050
+F 0 "#PWR?" H 9650 4800 50  0001 C CNN
+F 1 "GND" H 9650 4900 50  0000 C CNN
+F 2 "" H 9650 5050 60  0000 C CNN
+F 3 "" H 9650 5050 60  0000 C CNN
+	1    9650 5050
+	1    0    0    -1  
+$EndComp
+Text HLabel 9900 4650 2    60   Output ~ 0
+ADC_B
+Connection ~ 9650 4650
+$Comp
+L CX3099NL C?
+U 1 1 59C262AE
+P 6150 3200
+F 0 "C?" H 5850 3400 60  0000 C CNN
+F 1 "CX3099NL" H 6100 2950 60  0000 C CNN
+F 2 "" H 6150 3300 60  0000 C CNN
+F 3 "" H 6150 3300 60  0000 C CNN
+	1    6150 3200
+	1    0    0    -1  
+$EndComp
+Text Notes 5400 3900 0    60   ~ 0
+5 - 1000 MHz directional coupler
+$Comp
+L SMA P?
+U 1 1 59C26562
+P 4600 3100
+F 0 "P?" H 4750 3100 60  0000 C CNN
+F 1 "SMA" H 4600 3250 60  0000 C CNN
+F 2 "" H 4600 3100 60  0000 C CNN
+F 3 "" H 4600 3100 60  0000 C CNN
+	1    4600 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L SMA P?
+U 1 1 59C2676B
+P 7650 3100
+F 0 "P?" H 7800 3100 60  0000 C CNN
+F 1 "SMA" H 7650 3250 60  0000 C CNN
+F 2 "" H 7650 3100 60  0000 C CNN
+F 3 "" H 7650 3100 60  0000 C CNN
+	1    7650 3100
+	1    0    0    -1  
+$EndComp
+Text Label 7400 3100 2    60   ~ 0
+RF_OUT
+Text Label 4850 3100 0    60   ~ 0
+RF_IN
+$Comp
+L GND #PWR?
+U 1 1 59C26A63
+P 4600 3300
+F 0 "#PWR?" H 4600 3050 50  0001 C CNN
+F 1 "GND" H 4600 3150 50  0000 C CNN
+F 2 "" H 4600 3300 60  0000 C CNN
+F 3 "" H 4600 3300 60  0000 C CNN
+	1    4600 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59C26B17
+P 7650 3300
+F 0 "#PWR?" H 7650 3050 50  0001 C CNN
+F 1 "GND" H 7650 3150 50  0000 C CNN
+F 2 "" H 7650 3300 60  0000 C CNN
+F 3 "" H 7650 3300 60  0000 C CNN
+	1    7650 3300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 3250 7650 3300
+Wire Wire Line
+	4600 3250 4600 3300
+$EndSCHEMATC
