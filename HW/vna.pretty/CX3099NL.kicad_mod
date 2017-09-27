@@ -36,4 +36,9 @@
   (pad 2 smd rect (at 0 2.225) (size 1 1.55) (layers F.Cu F.Paste F.Mask))
   (pad 4 smd rect (at 1.5 -2.225) (size 1 1.55) (layers F.Cu F.Paste F.Mask))
   (pad 3 smd rect (at 1.5 2.225) (size 1 1.55) (layers F.Cu F.Paste F.Mask))
+  (model "D:/Elektronika/Microwavino Detector/HW/3d/User Library-PA1005_XXXNL.wrl"
+    (at (xyz 0 0 0))
+    (scale (xyz 300 250 300))
+    (rotate (xyz 0 0 0))
+  )
 )

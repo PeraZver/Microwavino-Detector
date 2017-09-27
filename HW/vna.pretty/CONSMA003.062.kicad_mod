@@ -50,7 +50,7 @@
     (zone_connect 2))
   (pad 2 thru_hole circle (at -1.75 2.1) (size 0.5 0.5) (drill 0.25) (layers *.Cu *.Mask F.SilkS)
     (zone_connect 2))
-  (model "D:/Data/Microwavino/HW/3d/User Library-RP_SMA_PCB-1.wrl"
+  (model "D:/Elektronika/Microwavino Detector/HW/3d/User Library-RP_SMA_PCB-1.wrl"
     (at (xyz 0.08 0 0.005))
     (scale (xyz 200 200 200))
     (rotate (xyz 0 180 90))

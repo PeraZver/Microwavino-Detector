@@ -20,4 +20,9 @@
   (pad 5 smd rect (at 0.75 -1.1176) (size 0.3 1) (layers F.Cu F.Paste F.Mask))
   (pad 4 smd rect (at 0.75 1.1176) (size 0.3 1) (layers F.Cu F.Paste F.Mask))
   (pad EPAD smd rect (at 0 0 90) (size 0.45 1.75) (layers F.Cu F.Paste F.Mask))
+  (model "D:/Elektronika/Microwavino Detector/HW/3d/User Library-AD8319.wrl"
+    (at (xyz 0 0 0))
+    (scale (xyz 400 400 400))
+    (rotate (xyz 90 180 180))
+  )
 )
