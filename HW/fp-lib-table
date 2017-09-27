@@ -1,3 +1,4 @@
 (fp_lib_table
+  (lib (name VNA)(type KiCad)(uri "$(KIPRJMOD)/vna.pretty")(options "")(descr ""))
   (lib (name vna)(type KiCad)(uri "$(KIPRJMOD)/vna.pretty")(options "")(descr ""))
 )
